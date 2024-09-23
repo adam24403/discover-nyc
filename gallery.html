@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Discover New York City</title>
+</head>
+
+<body>
+
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about-feature.html">About</a></li>
+        <li><a href="contactUs.html">Contact</a></li>
+    </ul>
+
+    <script>
+        function selectImage(imageSrc) {
+            document.getElementById('featured').src = imageSrc;
+        }
+    </script>
+
+    <h1>Discover New York City</h1>
+
+    <div class="gallery-container">
+        <div class="featured-image">
+            <img id="featured" src="images/1.jfif" alt="Featured Image">
+        </div>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="images/1.jfif" alt="Times Square at Dusk" onclick="selectImage('images/1.jfif')">
+            </div>
+            <div class="gallery-item">
+                <img src="images/2.jfif" alt="New York Cityscape during Daytime" onclick="selectImage('images/2.jfif')">
+            </div>
+            <div class="gallery-item">
+                <img src="images/3.webp" alt="The Statue of Liberty" onclick="selectImage('images/3.webp')">
+            </div>
+            <div class="gallery-item">
+                <img src="images/4.jfif" alt="New York Cityscape at Dusk" onclick="selectImage('images/4.jfif')">
+            </div>
+            <div class="gallery-item">
+                <img src="images/5.jfif" alt="Overhead View of Central Park" onclick="selectImage('images/5.jfif')">
+            </div>
+            <div class="gallery-item">
+                <img src="images/6.jfif" alt="Overhead View of New York City" onclick="selectImage('images/6.jfif')">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
